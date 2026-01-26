@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Juan Pablo Alzate - Data Science Portfolio</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://github.com/juanpaat" class="link"
+          >JPA.</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#dashboards">Dashboards</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#ml-ai">ML & AI</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#statistics">Statistics</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#nlp">NLP</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <img 
+          src="IMG_0705.JPG" 
+          alt="Juan Pablo Alzate" 
+          class="about__photo"
+        />
+        <h1>Hi, I am <span class="about__name">Juan P Alzate.</span></h1>
+        <h2 class="about__role">Data Scientist - Biologist</h2>
+
+        <p class="about__desc">
+          I started out in biology, fascinated by how living systems work, but I quickly
+          became drawn to the enormous amounts of data behind those systems and the stories
+          they reveal when analysed thoughtfully. That curiosity opened the door to data
+          science, where I discovered a new way to explore complex questions through
+          numbers, patterns, and models. I completed my Master's in Data Science at the
+          University of Essex, merging my biological background with advanced analytical techniques.
+        </p>
+
+        <div class="about__contact center">
+          <a href="https://example.com">
+            <span class="btn btn--outline">CV</span>
+          </a>
+        </div>
+
+        <div class="about__social center">
+          <a
+            href="https://github.com/juanpaat"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/juanpaat"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+
+          <a
+            href="https://twitter.com/JuanBioData"
+            aria-label="X (Twitter)"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-x-twitter"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/juanbiodata/"
+            aria-label="instagram"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-instagram"></i>
+          </a>
+        </div>
+
+        <br />
+
+        <h3 class="section__title">Skills</h3>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">R</li>
+          <li class="skills__list-item btn btn--plain">Machine Learning</li>
+          <li class="skills__list-item btn btn--plain">Deep Learning</li>
+          <li class="skills__list-item btn btn--plain">NLP</li>
+          <li class="skills__list-item btn btn--plain">LLM</li>
+          <li class="skills__list-item btn btn--plain">AI</li>
+          <li class="skills__list-item btn btn--plain">Computer Vision</li>
+          <li class="skills__list-item btn btn--plain">Statistics</li>
+          <li class="skills__list-item btn btn--plain">Data Visualization</li>
+          <li class="skills__list-item btn btn--plain">Power BI</li>
+          <li class="skills__list-item btn btn--plain">Tableau</li>
+          <li class="skills__list-item btn btn--plain">SQL</li>
+          <li class="skills__list-item btn btn--plain">GIS</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+        </ul>
+      </div>
+
+      <!-- Dashboards -->
+      <section id="dashboards" class="section projects">
+        <h2 class="section__title">Dashboards</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Economic Growth and Education in Mortality</h3>
+            <img src="images/Infant Mortality.JPG" alt="Economic Growth and Education in Mortality" class="project__image" />
+            <p class="project__description">
+              Dashboard of economy and education in the 21st century and how these variables interact with mortality.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Power BI</li>
+              <li class="project__stack-item">Data Analysis</li>
+            </ul>
+            <a
+              href="https://app.powerbi.com/view?r=eyJrIjoiNDc3ODI2NDktMTgzZi00MWE5LTk2YTktZjQ1ZmUyNGU3ZWM5IiwidCI6Ijk5ZTFlNzIxLTcxODQtNDk4ZS04YWZmLWIyYWQ0ZTUzYzFjMiIsImMiOjR9"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>1000 Days of COVID-19 in Colombia</h3>
+            <img src="images/1000 Days of COVID-19 in Colombia.PNG" alt="1000 Days of COVID-19 in Colombia" class="project__image" />
+            <p class="project__description">
+              The 1000 days of COVID Dashboard displays the data of the 1000 days after the first covid case was found.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Tableau</li>
+              <li class="project__stack-item">Data Visualization</li>
+            </ul>
+            <a
+              href="https://public.tableau.com/views/1000DaysofCOVID-19inColombia/1000DaysofCOVID-19inColombia?:language=es-ES&:display_count=n&:origin=viz_share_link"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Simply Music</h3>
+            <img src="images/Simply Music.png" alt="Simply Music" class="project__image" />
+            <p class="project__description">
+              Interactive information about the sales of a music store in the US called Simply Music.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Tableau</li>
+              <li class="project__stack-item">Sales Analysis</li>
+            </ul>
+            <a
+              href="https://public.tableau.com/views/SimplyMusic_16648527916560/Birds-EyeView?:language=es-ES&:display_count=n&:origin=viz_share_link"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>ICFES Colombia</h3>
+            <img src="images/ICFES Colombia.png" alt="ICFES Colombia" class="project__image" />
+            <p class="project__description">
+              ICFES is the exam that all Colombian students must take when they complete their secondary school studies.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Power BI</li>
+              <li class="project__stack-item">Education Data</li>
+            </ul>
+            <a
+              href="https://app.powerbi.com/view?r=eyJrIjoiMmMxYTY5ODktNTE1Ny00NDVkLTllYmItMmRkMzFhYTBhZWI0IiwidCI6Ijk5ZTFlNzIxLTcxODQtNDk4ZS04YWZmLWIyYWQ0ZTUzYzFjMiIsImMiOjR9"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Machine Learning and AI models -->
+      <section id="ml-ai" class="section projects">
+        <h2 class="section__title">Machine Learning and AI Models</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Computer Vision for Early Alzheimer's Detection</h3>
+            <img src="images/Computer vision.png" alt="Computer Vision for Alzheimer's Detection" class="project__image" />
+            <p class="project__description">
+              AI to classify Alzheimer's disease and its severity using MRI brain scans.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">CNN</li>
+              <li class="project__stack-item">TensorFlow</li>
+            </ul>
+            <a
+              href="https://github.com/juanpaat/Alzheimer-s-CNN"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Optimising Cancer Diagnosis with Gene Expression</h3>
+            <img src="images/Gene expression.png" alt="Cancer Diagnosis with Gene Expression" class="project__image" />
+            <p class="project__description">
+              Advanced dimensionality reduction and ML techniques to enhance cancer classification accuracy.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Machine Learning</li>
+              <li class="project__stack-item">PCA</li>
+            </ul>
+            <a
+              href="https://github.com/juanpaat/Cancer_Detection"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Computer Vision for Heart Rate Analysis</h3>
+            <img src="images/embryoheart.png" alt="Heart Rate Analysis" class="project__image" />
+            <p class="project__description">
+              Computer vision to detect and measure heart rate using video with unlabelled data.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Computer Vision</li>
+              <li class="project__stack-item">Signal Processing</li>
+            </ul>
+            <a
+              href="https://github.com/juanpaat/embryo-heart-rate-analysis"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Global Food Insecurity Prediction</h3>
+            <img src="images/Famine.png" alt="Global Food Insecurity Prediction" class="project__image" />
+            <p class="project__description">
+              Predicting food insecurity using ML to support proactive decision-making and resource allocation.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Machine Learning</li>
+              <li class="project__stack-item">Data Analysis</li>
+            </ul>
+            <a
+              href="https://github.com/juanpaat/Global-Food-Insecurity"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Workout Prediction</h3>
+            <img src="images/Machine learning.png" alt="Workout Prediction" class="project__image" />
+            <p class="project__description">
+              Analysis of data from accelerometers to predict the way in which the exercise was done.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">R</li>
+              <li class="project__stack-item">Machine Learning</li>
+              <li class="project__stack-item">Classification</li>
+            </ul>
+            <a
+              href="https://github.com/juanpaat/Machine-Learning-Project"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Statistical Analysis -->
+      <section id="statistics" class="section projects">
+        <h2 class="section__title">Statistical Analysis</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>International Trade Network Analysis</h3>
+            <img src="images/Network Analysis.png" alt="International Trade Network Analysis" class="project__image" />
+            <p class="project__description">
+              2021's Global trade network, key players, trade patterns, and the impact of COVID-19.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">R</li>
+              <li class="project__stack-item">Network Analysis</li>
+              <li class="project__stack-item">Statistics</li>
+            </ul>
+            <a
+              href="https://github.com/juanpaat/International-Trade-Network-Analysis-.git"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>EDA Crime and Weather in Colchester</h3>
+            <img src="images/Colchester weather.png" alt="EDA Crime and Weather in Colchester" class="project__image" />
+            <p class="project__description">
+              Analysis of crime and weather data from Colchester, uncovering patterns and correlations through visualisations.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">R</li>
+              <li class="project__stack-item">EDA</li>
+              <li class="project__stack-item">Data Visualization</li>
+            </ul>
+            <a
+              href="https://rpubs.com/Juanpaat/Crime-Weather-Colchester-EDA"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Modelling Graduation Rates</h3>
+            <img src="images/GraduationRates.png" alt="Modelling Graduation Rates" class="project__image" />
+            <p class="project__description">
+              Analysis of college characteristics to identify key factors influencing graduation rates.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">R</li>
+              <li class="project__stack-item">Regression</li>
+              <li class="project__stack-item">Statistics</li>
+            </ul>
+            <a
+              href="https://rpubs.com/Juanpaat/GraduationRates"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- NLP -->
+      <section id="nlp" class="section projects">
+        <h2 class="section__title">NLP</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Content Carousel Classification</h3>
+            <img src="images/Content-Carousel-Classification.png" alt="Content Carousel Classification" class="project__image" />
+            <p class="project__description">
+              Zero-Shot Classification using NLP to automatically categorise content carousels from streaming platforms.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">NLP</li>
+              <li class="project__stack-item">Zero-Shot</li>
+            </ul>
+            <a
+              href="https://github.com/juanpaat/Content-Carousel-Classification"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Next-Word Prediction</h3>
+            <img src="images/Word Predictor.png" alt="Next-Word Prediction" class="project__image" />
+            <p class="project__description">
+              Application that intelligently predicts the most likely next words based on your input text with probability scores.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Streamlit</li>
+              <li class="project__stack-item">NLP</li>
+            </ul>
+            <a
+              href="https://next-word-predictor-openai.streamlit.app/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Visualizations -->
+      <section id="visualizations" class="section projects">
+        <h2 class="section__title">Visualizations</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Adolescent Fertility Rate</h3>
+            <img src="images/Adolescent fertility rate .png" alt="Adolescent Fertility Rate" class="project__image" />
+            <p class="project__description">
+              Adolescent fertility rate (AFR) measures births to women aged 15-19 years per 1000 individuals.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Data Viz</li>
+              <li class="project__stack-item">Health Data</li>
+            </ul>
+            <a
+              href="https://www.instagram.com/p/Cnh2-3EPeZu/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Radopholus Boxplot</h3>
+            <img src="images/Radopholus Boxplot.png" alt="Radopholus Boxplot" class="project__image" />
+            <p class="project__description">
+              Radopholus is a genus of plant-parasitic nematodes causing significant economic losses in agriculture.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">R</li>
+              <li class="project__stack-item">ggplot2</li>
+            </ul>
+            <a
+              href="https://www.instagram.com/p/CjMGfPXM_h6/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Nematode Lineplot</h3>
+            <img src="images/Radopholus Lineplot.png" alt="Nematode Lineplot" class="project__image" />
+            <p class="project__description">
+              A profile plot examining the relative behavior of all variables in a multivariate data set.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">R</li>
+              <li class="project__stack-item">ggplot2</li>
+            </ul>
+            <a
+              href="https://www.instagram.com/p/CjMGhSEswnN/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Contracts Visualization</h3>
+            <img src="images/plot_voluntariado.png" alt="Contracts Visualization" class="project__image" />
+            <p class="project__description">
+              Open access to information promoting equity, transparency, and democratic communication.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Data Viz</li>
+              <li class="project__stack-item">Open Data</li>
+            </ul>
+            <a
+              href="https://www.instagram.com/p/CjMGdWQMb2c/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Publications -->
+      <section id="publications" class="section projects">
+        <h2 class="section__title">Publications</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Nematicidal Potential of Fungi in Plantain Crops</h3>
+            <img src="images/Publication.png" alt="Nematicidal Potential of Fungi" class="project__image" />
+            <p class="project__description">
+              Study evaluating nematicidal potential of fungal isolates from plantain crops against phytoparasitic nematodes. Published in BIOMA lab.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Biology</li>
+              <li class="project__stack-item">Research</li>
+              <li class="project__stack-item">Publication</li>
+            </ul>
+            <a
+              href="https://revistas.unal.edu.co/index.php/biotecnologia/article/view/99038"
+              aria-label="read publication"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:juanpabloalzatetamayo@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://github.com/juanpaat"
+        class="link footer__link"
+      >
+        Created By Juan P Alzate
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
